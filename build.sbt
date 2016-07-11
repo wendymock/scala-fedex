@@ -2,7 +2,9 @@ name := """scala-fedex"""
 
 organization := "com.gilt"
 
-licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
+version := "git describe --tags --always --dirty".!!.trim.replaceFirst("^v","")
+
+
 
 javacOptions ++= Seq("-source", "1.6", "-target", "1.6")
 
@@ -14,15 +16,16 @@ libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.4"
 )
 
-com.typesafe.sbt.SbtGit.versionWithGit
-
 publishMavenStyle := true
 
 bintrayOrganization := Some("giltgroupe")
 
+
 publishArtifact in Test := false
 
 pomIncludeRepository := { _ => false }
+
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 
 homepage := Some(url("https://github.com/gilt/scala-fedex"))
 
