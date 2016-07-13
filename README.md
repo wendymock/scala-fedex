@@ -42,7 +42,7 @@ This project’s FedEx models are generated using [scalaxb](https://github.com/e
 ./gen.sh
 ```
 
-### Published to Gilt's Bin
+### Publish
 ```bash
 git tag X.X.X
 git push --tags
