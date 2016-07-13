@@ -2664,7 +2664,7 @@ object PricingCodeType {
     case "INTERNATIONAL_DISTRIBUTION" => INTERNATIONAL_DISTRIBUTION
     case "INTERNATIONAL_ECONOMY_SERVICE" => INTERNATIONAL_ECONOMY_SERVICE
     case "LTL_FREIGHT" => LTL_FREIGHT
-    case "PACKAGE" => PACKAGE
+    case "PACKAGE" => _PACKAGE_
     case "SHIPMENT" => SHIPMENT
     case "SHIPMENT_FIVE_POUND_OPTIONAL" => SHIPMENT_FIVE_POUND_OPTIONAL
     case "SHIPMENT_OPTIONAL" => SHIPMENT_OPTIONAL
@@ -2681,7 +2681,7 @@ case object HUNDREDWEIGHT_ALTERNATE extends PricingCodeType { override def toStr
 case object INTERNATIONAL_DISTRIBUTION extends PricingCodeType { override def toString = "INTERNATIONAL_DISTRIBUTION" }
 case object INTERNATIONAL_ECONOMY_SERVICE extends PricingCodeType { override def toString = "INTERNATIONAL_ECONOMY_SERVICE" }
 case object LTL_FREIGHT extends PricingCodeType { override def toString = "LTL_FREIGHT" }
-case object PACKAGE extends PricingCodeType { override def toString = "PACKAGE" }
+case object _PACKAGE_ extends PricingCodeType { override def toString = "PACKAGE" }
 case object SHIPMENT extends PricingCodeType { override def toString = "SHIPMENT" }
 case object SHIPMENT_FIVE_POUND_OPTIONAL extends PricingCodeType { override def toString = "SHIPMENT_FIVE_POUND_OPTIONAL" }
 case object SHIPMENT_OPTIONAL extends PricingCodeType { override def toString = "SHIPMENT_OPTIONAL" }
