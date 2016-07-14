@@ -2,6 +2,7 @@
 A thin async Scala client for [FedEx’s Ship Service SOAP API](https://www.fedex.com/us/developer/web-services/process.html). 
 
 [![Build Status](https://travis-ci.org/gilt/scala-fedex.svg?branch=master)](https://travis-ci.org/gilt/scala-fedex)
+[![GitHub version](https://badge.fury.io/gh/gilt%2Fscala-fedex.svg)](https://badge.fury.io/gh/gilt%2Fscala-fedex)
 
 scala-fedex reduces the boilerplate and verbosity of generated code from the Ship Service WSDL. It provides a nice abstraction and cleaner example of usage than the Java sample code on FedEx’s site 🌸 👍
 
