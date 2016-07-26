@@ -8,6 +8,12 @@ scala-fedex reduces the boilerplate and verbosity of generated code from the Shi
 
 ### Usage
 
+#### Add it to your build.sbt
+```scala
+"com.gilt" %% "scala-fedex" % "0.0.3"
+```
+
+#### Create a new client and process a shipment
 ```scala
 // Create a client instance
 val fedexClient = new FedexClient(key, password, accountNumber, meterNumber)
