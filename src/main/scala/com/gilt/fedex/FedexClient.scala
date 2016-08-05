@@ -64,4 +64,17 @@ class FedexClient(
       version,
       requestedShipment)
   }
+
+  /**
+   * Debugging method to serialize a processShipment request to the XML it'll produce
+   */
+  def processShipmentToXml(requestedShipment: RequestedShipment, transactionId: String = genTransactionId): String = {
+    scalaxb.toXML(com.fedex.ship.stub.ProcessShipmentRequest(
+      webAuthenticationDetail,
+      clientDetail,
+      Some(buildTransactionDetail(transactionId)),
+      version, requestedShipment),
+      Some("http://fedex.com/ws/ship/v17"),
+      "ProcessShipmentRequest", defaultScope).toString
+  }
 }
