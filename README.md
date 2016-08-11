@@ -10,7 +10,7 @@ scala-fedex reduces the boilerplate and verbosity of generated code from the Shi
 
 #### Add it to your build.sbt
 ```scala
-"com.gilt" %% "scala-fedex" % "0.0.3"
+"com.gilt" %% "scala-fedex" % "0.0.4"
 ```
 
 #### Create a new client and process a shipment
