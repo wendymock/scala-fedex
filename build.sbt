@@ -6,7 +6,7 @@ version := "git describe --tags --always --dirty".!!.trim.replaceFirst("^v","")
 
 
 
-javacOptions ++= Seq("-source", "1.6", "-target", "1.6")
+javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
 
 scalaVersion := "2.11.8"
 
