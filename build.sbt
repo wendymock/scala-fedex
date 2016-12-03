@@ -8,7 +8,7 @@ version := "git describe --tags --always --dirty".!!.trim.replaceFirst("^v","")
 
 javacOptions ++= Seq("-source", "1.6", "-target", "1.6")
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "2.2.1" % "test",
